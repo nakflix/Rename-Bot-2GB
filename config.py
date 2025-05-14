@@ -4,13 +4,13 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "14298205")
+    API_HASH  = os.environ.get("API_HASH", "28df6d84da76d8606bf5f0e71ecfb62c")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7148807362:AAHsmCw_cfrgGvaKeR7VYgLwmaA1uKsLugA") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","rename")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","renamerbot")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://alphakiti:alpha3720@renamerbot.9ux2j.mongodb.net/?retryWrites=true&w=majority")
 
     # other configs
     BOT_UPTIME  = time.time()
@@ -18,9 +18,9 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
     # channels logs
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "TechifyBots") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", ""))
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "nakflixtv") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001870385542"))
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1001870385542"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
