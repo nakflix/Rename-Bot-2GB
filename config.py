@@ -6,7 +6,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "14298205")
     API_HASH  = os.environ.get("API_HASH", "28df6d84da76d8606bf5f0e71ecfb62c")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7148807362:AAHsmCw_cfrgGvaKeR7VYgLwmaA1uKsLugA") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7484646281:AAE_vwMEsW9EX89-K7eBOH9I3ZgOy2QUuSY") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","renamerbot")     
