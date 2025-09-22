@@ -5,13 +5,13 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "14298205")
+    API_HASH  = os.environ.get("API_HASH", "28df6d84da76d8606bf5f0e71ecfb62c")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7484646281:AAEG-IYH7GFfuppndxfzRXiWlAVLjRJRVsI") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
-    DATABASE_URL  = os.environ.get("DATABASE_URL","")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","renamerbot")     
+    DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://alphakiti:alpha3720@renamerbot.9ux2j.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
@@ -19,8 +19,8 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
     # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "nakflixtv") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001870385542"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
